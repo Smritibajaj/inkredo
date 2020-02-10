@@ -1,0 +1,29 @@
+@import './modules/fonts.scss';
+@import './modules/color.scss';
+
+.why{
+    @include text-40;
+    text-align: center;
+}
+.container{
+ justify-content: center;
+ text-align: justify;
+ margin: 40px 16px;
+ @include text-16-normal;
+}
+
+.sub-head{
+    display:inline-block;
+    @include text-24;
+    margin: 20px 0;
+}
+
+.text{
+    @include text-16-normal;
+    line-height: 165%;     
+}
+
+.grey-box{
+    background: #F2F5FE;
+    padding: 20px;
+}

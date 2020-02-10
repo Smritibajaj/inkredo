@@ -1,0 +1,17 @@
+@import './modules/fonts.scss';
+@import './modules/color.scss';
+
+.blogTitle{
+    @include text-24;
+    height: 60px;
+}
+
+.blogOwner{
+    @include text-16-normal;
+    padding:8px;
+    font-weight: 500;
+}
+
+.Avatar{
+    margin:8px;
+}

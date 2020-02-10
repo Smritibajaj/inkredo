@@ -1,0 +1,85 @@
+
+@font-face {
+    font-family: 'Roboto Mono';
+    src: url('https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap');
+    font-style: normal;
+}
+$base-font-family:'Roboto Mono';
+$font-weight-900:900;
+$font-weight-800:800;
+$font-weight-700:700;
+$font-weight-600:600;
+$font-weight-500:500;
+$font-weight-normal:normal;
+$font-weight-bold:bold;
+$font-size-72:72px;    
+$font-size-56:56px;
+$font-size-40:40px;
+$font-size-32:32px;
+$font-size-24:24px;
+$font-size-20:20px;
+$font-size-16:16px;
+$font-size-14:14px;
+$line-height-19:19px;
+$line-height-39:39px;
+$line-height-29:29px;
+$line-height-115:115%;
+$line-height-125:125%;
+$line-height-150:150%;
+
+@mixin text-72 {
+    font-family: $base-font-family;
+    font-size: $font-size-72;
+    font-weight: $font-weight-900;
+    line-height: $line-height-115;
+}
+@mixin text-56 {
+    font-family: $base-font-family;
+    font-size: $font-size-56;
+    font-weight: $font-weight-800;
+    line-height:$line-height-125;
+}
+  
+@mixin text-40 {
+    font-family: $base-font-family;
+    font-size: $font-size-40;
+    font-weight: $font-weight-800;
+}
+ 
+@mixin text-32 {
+    font-family: $base-font-family;
+    font-size: $font-size-32;
+    font-weight: $font-weight-normal;
+    line-height: $line-height-39;
+}
+@mixin text-24 {
+    font-family: $base-font-family;
+    font-size: $font-size-24;
+    font-weight: $font-weight-600;
+    line-height: $line-height-29;
+}
+@mixin text-20 {
+    font-family: $base-font-family;
+    font-size: $font-size-20;
+    font-weight: $font-weight-normal;
+    line-height: $line-height-150;
+}
+ 
+@mixin text-16-normal {
+    font-family: $base-font-family;
+    font-size: $font-size-16;
+    font-weight: $font-weight-normal;
+    line-height: $line-height-19;
+}
+  
+@mixin text-16 {
+    font-family: $base-font-family;
+    font-size: $font-size-16;
+    font-weight: $font-weight-600;
+}
+  
+@mixin text-14 {
+    font-family: $base-font-family;
+    font-size: $font-size-14;
+    font-weight: $font-weight-normal;
+}

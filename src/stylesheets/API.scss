@@ -1,0 +1,21 @@
+@import './modules/fonts.scss';
+@import './modules/color.scss';
+
+.link-text{
+    @include text-16-normal;
+    color:black;
+}
+.boxes{margin: 40px;}
+
+.titles{
+    @include text-40;
+}
+
+.information{
+    @include text-16-normal;
+    text-align: justify;
+}
+
+.highlighted{
+    background: #F2F5FE;
+}

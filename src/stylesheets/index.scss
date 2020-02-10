@@ -1,0 +1,19 @@
+@import-normalize;
+@import './modules/fonts.scss';
+@import './modules/color.scss';
+@import './modules/margin.scss';
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto Mono";
+}
+
+
+

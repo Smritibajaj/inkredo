@@ -1,0 +1,159 @@
+@import './modules/color.scss';
+@import './modules/fonts.scss';
+@import './modules/display.scss';
+h6{
+    margin: 0;
+}
+div .header{
+    box-shadow: none;
+}
+.App-row{
+    background-color: $brand-color;
+}
+
+.App{
+    justify-content: space-around;
+    align-items: center;
+}
+
+.App > .logo{
+    justify-content: flex-end;
+}
+.App >.navigator{
+    justify-content: center;
+}
+
+.App > .appbutton{
+    justify-content: flex-start;
+}
+
+.Logo-text{
+    @include text-32;
+    color:$brand-color-400;
+    font-weight: $font-weight-bold;
+}
+
+.App > div > a{
+    @include text-16;
+    color:$brand-color-400;
+    padding:8px;
+    margin:8px;
+    text-decoration: none;
+    text-transform: uppercase;
+    &:hover {
+        border-bottom: 4px solid $brand-color-400;
+    }
+}
+
+.appbutton > button {
+    @include text-16-normal;
+    text-transform: uppercase;
+    padding:16px;
+    color:$brand-color-400;
+    border-radius: 5%;
+    border: none;
+    margin:8px;
+    border: solid 1px $brand-color-400;
+    &:hover{
+        color:white;
+        background-color: $brand-color-400!important;
+    }
+}
+
+.App-logo{
+    position: absolute;
+    height: 43px;
+    left: 84px;
+    top: 24px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 43px;
+    color: #2A59FF;
+}
+.title{
+    font-family: $base-font-family !important;
+    font-weight: bold !important;
+    line-height: 39px !important;
+    color:$brand-color-400;
+}
+
+.Tab >  div > div > button {
+font-family: Inter;
+font-style: normal;
+font-weight: bold;
+font-size: 16px;
+line-height: 19px;
+letter-spacing: 0.02em;
+color:$brand-color-400;
+}
+.App-button{
+    color:$brand-color-400 !important;
+    border-radius: 4px;
+    font-family: Inter;
+font-style: normal !important;
+font-weight: 500 !important;
+font-size: 16px !important;
+line-height: 24px !important;
+}
+
+
+.toolbar{
+    justify-content: space-evenly;
+}
+
+.box{
+    display: flex;
+    justify-content: space-between;
+}
+
+.box > div{
+    padding:8px;
+    font-family: Inter;
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 19px;
+letter-spacing: 0.02em;
+text-transform: uppercase;
+color: #2A59FF;
+
+}
+
+.brand-name{
+@include text-32;
+color: rgb(195, 203, 231);
+height:20px;
+}
+
+.active{
+    color:red;
+    border-bottom: 4px solid $brand-color-400;
+}
+
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+   
+
+    
+}
+
+@media(max-width: 768px){
+
+    .Logo-text{
+        @include text-24;
+    }
+    .App > .logo{
+        justify-content: center;
+    }
+    .App > .appbutton{
+        justify-content: center;
+    }
+    .App > div > a {
+        font-size: 14px;
+        padding: 4px;
+    }
+
+}

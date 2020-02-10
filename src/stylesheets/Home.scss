@@ -1,0 +1,132 @@
+@import './modules/color.scss';
+@import './modules/fonts.scss';
+h1{
+    margin: 0;
+}
+.container1 > div{
+box-shadow:none;
+}
+
+.container1{
+    background-color: $brand-color;
+}
+.container2{
+    background-color: white;
+    padding-bottom: 32px;
+}
+
+.pb-32{
+    padding-bottom: 32px ;
+}
+
+.header1{
+    @include text-72;
+    align-self: center;
+    text-align: center;
+    margin-top: 72px;
+}
+.subheader{
+@include text-24;
+color:$color-gray-700;
+margin-top: 20px;
+font-weight: $font-weight-normal;
+text-align: center;
+}
+.subheader1{
+    text-align: center;
+    @include text-24;
+    color:$color-gray-700;
+    text-align: center;
+    & > span{
+      color: $brand-color-400;;  
+    }
+}
+.input-feild{
+    margin: 8px 16px; 
+    height:56px;
+    background-color: $brand-color-400;
+    border-radius: 8px;
+    padding: 16px;
+    border: solid 1px $brand-color-400;
+    color:white;
+    @include text-16;
+    line-height: 24px;
+    font-weight: 500;
+}
+.footer-text{
+    @include text-32;
+}
+
+.why{
+    @include text-56;
+    text-align: center;
+    margin-top: 16px;
+}
+.steps{
+    @include text-20;
+    color:$brand-color-400;
+}
+.procedure{
+    @include text-40;
+}
+.sub-procedure{
+    @include text-16-normal
+}
+
+.list-item{
+    @include text-20;
+    color:$color-gray-700;
+}
+
+.background-600{
+    background-color: $brand-color-600;
+    padding:32px;
+    color:white;
+}
+
+.highlight{
+    font-weight: $font-weight-bold;
+}
+.icon-border{
+    background: #FED7D7;
+    border-radius: 50%;
+    font-size: 16px;
+    margin-top:8px;
+    margin-right: 2px;
+}
+.inputbox{
+    border: solid 1px black;
+    padding: 16px;
+    width: 290px;
+    border-radius: 4px;
+    margin:8px
+}
+.inputbox::placeholder{
+    color:#718096;
+}
+
+div > a { 
+    color: white;
+    text-decoration: none; 
+}
+
+.table-header{
+    @include text-16;
+    line-height: 19px;
+    padding:10px;
+}
+
+.pink-box{
+    padding:20px;
+    font-size: 14px;
+    line-height: 165%;
+    background: #FFF3DC;
+}
+
+.get-started{
+    @include text-16-normal;
+    line-height: 24px;
+    &.MuiSvgIcon-root{
+        margin-left: 2px;
+    }
+}
